@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo"> <i class="fa fa-home"></i> Ikea-Clone  </a>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="search" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+
+</header>
+
+<!-- header section ends  -->
+
+<!-- closer btn  -->
+
+<div id="closer" class="fas fa-times"></div>
+
+<!-- navbar  -->
+
+<nav class="navbar">
+    <a href="index.html">home</a>
+    <a href="shop.html">shop</a>
+    <a href="about.html">about</a>
+
+    <a href="contact.html">contact</a>
+</nav>
+
+<!-- shopping cart  -->
+
+<div class="shopping-cart">
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="image/cart-img-2.jpg" alt="">
+        <div class="content">
+            <h3>Chair 1</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> Rs 1500 </span>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="image/cart-img-1.jpg" alt="">
+        <div class="content">
+            <h3>Chair 2</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> Rs 2500 </span>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="image/cart-img-3.jpg" alt="">
+        <div class="content">
+            <h3>Chair 3</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> Rs 1700 </span>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="image/cart-img-4.jpg" alt="">
+        <div class="content">
+            <h3>Chair 4</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> Rs 2000 </span>
+        </div>
+    </div>
+
+    <h3 class="total"> total : <span>Rs 7700</span> </h3>
+
+    <a href="#" class="btn">checkout</a>
+
+</div>
+<!-- login form  -->
+
+<div class="login-form">
+
+    <form action="">
+        <h3>Sign in</h3>
+        <input type="email" placeholder="Enter your email" class="box">
+        <input type="password" placeholder="Enter your password" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">Remember me</label>
+        </div>
+        <input type="submit" value="Sign In" class="btn">
+        
+        <p>Don't have an account? <a href="#">Sign Up</a></p>
+        <p>Forget password? <a href="#">Reset now</a></p>
+    </form>
+
+</div>
+<!-- home section starts  -->
+
+<section class="home">
+
+    <div class="slides-container">
+
+        <div class="slide active">
+            <div class="content">
+                <span>We work for your</span>
+                <h3>Living room</h3>
+                <p></p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="image">
+                <img src="image/lr1.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>We work for your</span>
+                <h3>Dining room</h3>
+                <p></p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="image">
+                <img src="image/dnr1.jpeg" alt="">
+            </div>
+        </div>
+         
+        <div class="slide">
+            <div class="content">
+                <span>We work for your</span>
+                <h3>Bed room</h3>
+                <p></p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="image">
+                <img src="image/bedroom.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>We work for your</span>
+                <h3>Study room</h3>
+                <p></p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="image">
+                <img src="image/Studyroom.jpeg" alt="">
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div id="slide-next" onclick="next()" class="fas fa-angle-right"></div>
+    <div id="slide-prev" onclick="prev()" class="fas fa-angle-left"></div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner-container">
+
+    <div class="banner">
+        <img src="image/banner-2.jpg" alt="">
+        <div class="content">
+            <span>limited offer</span>
+            <h3>100% off</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="image/banner-3.jpg" alt="">
+        <div class="content">
+            <span>limited offer</span>
+            <h3>70% off</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="image/banner-1.jpg" alt="">
+        <div class="content">
+            <span>limited offer</span>
+            <h3>50% off</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- banner section ends -->
+
+
+
+
+
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Navigate</h3>
+            <a href="index.html"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="shop.html"> <i class="fas fa-arrow-right"></i> shop</a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
+            
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+        </div>
+
+        <div class="box">
+            <h3>Help & Settings</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Profile</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Orders</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Best sellers</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Favorites</a>
+            
+        </div>
+
+        <div class="box">
+            <h3>Social Media</h3>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin</a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter</a>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook</a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" name="" placeholder="enter your email" id="">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+    
+</body>
+</html>
